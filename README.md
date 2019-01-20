@@ -111,10 +111,15 @@ detection, as better mechanical options are pursued to the enclosure, and potent
 a PCB daughter-board can be designed to be soldered to the LPC845-BRK to save space and
 add mechanical strength.
 
-## Demonstration
+## Photos/Demonstration
 
 ToDo
 
 ## Design Files
 
-ToDo
+The .step file for the wooden block used in this project is available below
+for 3D printing, CNC milling, etc.:
+
+![](block_render.png "Rendering of the block model")
+
+[lpc845_wooden_block.step](lpc845_wooden_block.step)
