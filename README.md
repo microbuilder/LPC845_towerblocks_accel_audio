@@ -46,8 +46,8 @@ The various components of this project are connected as follows:
 
 | Function   | LPC845-BRK Location | FXOS8700 Pin |
 |------------|---------------------|--------------|
-| SCL        | CN1-23              | SCL          |
-| SDA        | CN1-22              | SDA          |
+| SCL        | CN1-24 (PIO0_10)    | SCL          |
+| SDA        | CN1-23 (PIO0_11)    | SDA          |
 | VCC (3.3V) | CN1-40              | VIN          |
 | GND        | CN1-20              | GND          |
 
@@ -60,7 +60,7 @@ be added for the I2C bus to function correctly.
 
 | Function   | LPC845-BRK Location | PAM8302 Pin  |
 |------------|---------------------|--------------|
-| DAC0       | CN1-2               | A+           |
+| DAC0       | CN1-2 (PIO0_17)     | A+           |
 | GND        | CN1-20              | A-           |
 | VCC (3.3V) | CN1-40              | VIN          |
 | GND        | CN1-20              | GND          |
@@ -111,9 +111,19 @@ detection, as better mechanical options are pursued to the enclosure, and potent
 a PCB daughter-board can be designed to be soldered to the LPC845-BRK to save space and
 add mechanical strength.
 
-## Photos/Demonstration
+## Demonstration
 
-ToDo
+The following video shows the motion sensitivity of the device. Any sort of
+movement or touch, and the audio event fires, which might even be OVERLY
+sensitive, but it's easy to adjust in the firmware:
+
+> Click the image below to see the video on youtube!
+
+[![Watch the video](https://i.ytimg.com/vi/WVSEb37vCyU/hqdefault.jpg)](https://youtu.be/WVSEb37vCyU)
+
+**NOTE**: The audio in the video above is relatively muted, but the sound is
+louder (and adjustable!) in real life. The audio was initially kept low to
+avoid blowing out the 1W speaker during initial testing.
 
 ## Design Files
 
